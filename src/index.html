@@ -4,10 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <title>Form Design</title>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+  <div class="w-screen min-h-screen flex justify-center items-center">
+    <div class="max-w-5xl w-full mx-auto flex flex-col md:flex-row gap-6 bg-white p-10 rounded-xl shadow-2xl">
+      <!-- Left side content -->
+      <div class="w-full md:w-1/2 bg-[#E2ECFF] flex justify-center items-center rounded-md">
+        <div class="flex flex-col justify-center items-center p-10 text-center">
+          <img src="logo.jpg" class="h-20 w-20 rounded-xl">
+          <h1 class="text-2xl font-bold py-6">Let us help you run your own platform.</h1>
+          <p class="text-sm text-gray-600">Our Registration process is quicker than other edtech platforms.</p>
+        </div>
+      </div>
+
+      <!-- Right side content (Form) -->
+      <div class="w-full md:w-1/2 py-10">
+        <h1 class="text-2xl font-bold">Get Started</h1>
+        <p class="text-gray-500 pb-10">Create your own account now!</p>
+        <form action="#" class="flex flex-col gap-4">
+          <div>
+            <label for="name" class="text-gray-500 inline-block pb-4">Full Name:</label>
+            <input type="text" name="name" id="name" class="w-full border border-gray-500 rounded-md px-4 py-2 focus:outline-none text-black">
+          </div>
+          <div class="mb-4">
+            <label for="email" class="text-gray-500 inline-block pb-4">Email:</label>
+            <input type="email" name="email" id="email" class="w-full border border-gray-500 rounded-md px-4 py-2 focus:outline-none text-black">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="text-gray-500 inline-block pb-4">Password:</label>
+            <input type="password" name="password" id="password" class="w-full border border-gray-500 rounded-md px-4 py-2 focus:outline-none text-black">
+          </div>
+          <button class="w-full  py-4 bg-blue-500 text-white rounded-md">Sign Up</button>
+        </form>
+        <p class="text-center pt-10">Already a member?<span class="text-blue-500 font-bold">Sign up</span></p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
